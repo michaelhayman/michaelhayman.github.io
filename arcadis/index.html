@@ -2,29 +2,107 @@
   <head>
     <title>More than 12 million</title>
     <style type="text/css">
+      /** reset **/
+	  /* http://meyerweb.com/eric/tools/css/reset/
+		 v2.0 | 20110126
+		 License: none (public domain)
+	  */
+
+	  html, body, div, span, applet, object, iframe,
+	  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	  a, abbr, acronym, address, big, cite, code,
+	  del, dfn, em, img, ins, kbd, q, s, samp,
+	  small, strike, strong, sub, sup, tt, var,
+	  b, u, i, center,
+	  dl, dt, dd, ol, ul, li,
+	  fieldset, form, label, legend,
+	  table, caption, tbody, tfoot, thead, tr, th, td,
+	  article, aside, canvas, details, embed,
+	  figure, figcaption, footer, header, hgroup,
+	  menu, nav, output, ruby, section, summary,
+	  time, mark, audio, video {
+		  margin: 0;
+		  padding: 0;
+		  border: 0;
+		  font-size: 100%;
+		  font: inherit;
+		  vertical-align: baseline;
+	  }
+	  /* HTML5 display-role reset for older browsers */
+	  article, aside, details, figcaption, figure,
+	  footer, header, hgroup, menu, nav, section {
+		  display: block;
+	  }
+	  body {
+		  line-height: 1;
+	  }
+	  ol, ul {
+		  list-style: none;
+	  }
+	  blockquote, q {
+		  quotes: none;
+	  }
+	  blockquote:before, blockquote:after,
+	  q:before, q:after {
+		  content: '';
+		  content: none;
+	  }
+	  table {
+		  border-collapse: collapse;
+		  border-spacing: 0;
+	  }
+
+	  /** styles **/
+
       body {
         font-family: 'AktivGrotesk-Light';
         margin-left: 0px;
         margin-right: 0px;
+        background-image: url('bg.jpg');
+        min-width: 100%;
+        margin-top: 536px;
       }
 
       p, li {
         font-size: 10pt;
-        line-height: 20pt;
+        line-height: 17pt;
       }
 
       h1, h2, h3, h4, h5 {
-        font-family: 'AktivGrotesk-Light';
+        font-family: 'AktivGrotesk-Medium';
+      }
+
+      .quote {
+        font-family: 'AktivGrotesk-Medium';
+        font-size: 26pt;
+        margin-top: 32px;
+        line-height: 29pt;
+        margin-bottom: 32px;
+      }
+
+      .subheading {
+        font-family: 'AktivGrotesk-Medium';
+        font-size: 13pt;
+		margin-bottom: 34px;
+		margin-top: 40px;
+      }
+
+      .subsubheading {
+        font-family: 'AktivGrotesk-Medium';
+        font-size: 11pt;
+		margin-bottom: 5px;
       }
 
       .block {
         margin-left: 15px;
-        margin-right: 15px;
+        margin-right: 25px;
       }
 
-      .info {
+      .info-heading {
+        font-family: 'AktivGrotesk-Medium';
+		font-size: 26pt;
         color: #ED6B1A;
-        margin-bottom: 10px;
+        margin-bottom: 6px;
       }
 
       .info-explanation {
@@ -32,7 +110,8 @@
         color: #D1D1D1;
         font-weight: bold;
         font-size: 10pt;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        font-family: 'AktivGrotesk-Medium';
       }
 
       .bold {
@@ -41,7 +120,7 @@
 
       .divider {
         margin-bottom: 30px;
-        margin-top: 30px;
+        margin-top: 24px;
         border-bottom-style: solid;
         border-bottom-color: #EAEAEA;
         border-bottom-width: 2px;
@@ -54,17 +133,27 @@
 
       .video-picture {
         width: 100%;
-        height: 200px;
+        height: 221px;
         object-fit: cover;
       }
 
       .caption {
         font-size: 8pt;
         color: gray;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-top: 12px;
+        margin-bottom: 32px;
         margin-left: 20px;
         margin-right: 20px;
+      }
+
+	  ul {
+		margin-top: 22px;
+		margin-bottom: 35px;
+		list-style-type: disc;
+	  }
+
+      li {
+        margin-left: 16px;
       }
 
       .video-play-button {
@@ -90,9 +179,9 @@
     <div class="block">
       <p>The so-called "Sponge City" program was established, partly in response to the alarming statistic that, since 2008, the number of Chinese cities affected by flooding has more than doubled. The program gets its name from its <span class="bold">innovative solution</span>: using life- enhancing public spaces to absorb storm water, making the city more resilient to climate change and increased downfalls.</p>
 
-      <h1>The city has more than 12 million residents</h1>
+      <div class="quote">The city has more than 12 million residents</div>
 
-      <h4>Central China</h4>
+      <div class="subsubheading">Central China</div>
 
       <p>The first places to benefit from the program will be two districts in Wuhan. The city has more than 12 million residents, which makes it the most populated city in Central China. Wuhan is often subject to pluvial flooding, which occurs when an extremely heavy <a href="http://www.arcadis.com/">this is a text link</a> the urban drainage system and excess water is unable to drain away.</p>
     </div>
@@ -114,24 +203,24 @@
         <li>Provide an example for other Chinese cities</li>
       </ul>
 
-      <h3>Some numbers</h3>
+      <div class="subheading">Some numbers</div>
 
       <div class="info-box">
-        <h1 class="info">2.7 million</h1>
+        <div class="info-heading">2.7 million</div>
         <span class="info-explanation">Travellers a day</span>
       </div>
 
       <div class="divider"></div>
 
       <div class="info-box">
-        <h1 class="info">$11.5 million</h1>
+        <div class="info-heading">$11.5 million</div>
         <span class="info-explanation">More revenues</span>
       </div>
 
       <div class="divider"></div>
 
       <div class="info-box">
-        <h1 class="info">$9,5 million</h1>
+        <div class="info-heading">$9,5 million</div>
         <span class="info-explanation">More revenues</span>
       </div>
     </div>
