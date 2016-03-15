@@ -56,12 +56,11 @@
 
       body {
         font-family: 'AktivGrotesk-Light';
+        margin-top: 536px;
+        margin-bottom: 20px;
         margin-left: 0px;
         margin-right: 0px;
         // background-image: url('bg.jpg');
-        min-width: 100%;
-        margin-top: 536px;
-        margin-bottom: 20px;
       }
 
       p, li {
@@ -75,6 +74,7 @@
         margin-top: 32px;
         line-height: 29pt;
         margin-bottom: 32px;
+        display: block;
       }
 
       .subheading {
@@ -123,21 +123,26 @@
         border-bottom-width: 2px;
       }
 
-      .video {
+      .video-wrapper {
         margin: 0;
+        margin-top: 25px;
+      }
+
+      .video {
         position: relative;
       }
 
       .video-picture {
         width: 100%;
-        height: 221px;
+        height: 185px;
         object-fit: cover;
       }
 
       .caption {
         font-size: 8pt;
+        line-height: 12pt;
         color: gray;
-        margin-top: 13px;
+        margin-top: 12px;
         margin-bottom: 32px;
         margin-left: 16px;
         margin-right: 20px;
@@ -183,11 +188,13 @@
       <p>The first places to benefit from the program will be two districts in Wuhan. The city has more than 12 million residents, which makes it the most populated city in Central China. Wuhan is often subject to pluvial flooding, which occurs when an extremely heavy <a href="http://www.arcadis.com/">this is a text link</a> the urban drainage system and excess water is unable to drain away.</p>
     </div>
 
-    <div class="video">
-      <img src="chinaflooding.png" class="video-picture">
-      <a href="http://www.arcadis.com/">
-        <img src="play-button.png" class="video-play-button">
-      </a>
+    <div class="video-wrapper">
+      <div class="video">
+        <img src="chinaflooding.png" class="video-picture">
+        <a href="http://www.arcadis.com/">
+          <img src="play-button.png" class="video-play-button">
+        </a>
+      </div>
       <div class="caption">Photo: Its ultimate goal is to manage 60 percent of the rainwater and provide an example for other Chinese cities.</div>
     </div>
 
