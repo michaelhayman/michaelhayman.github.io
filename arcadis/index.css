@@ -64,7 +64,7 @@ p, li {
   line-height: 17pt;
 }
 
-.quote {
+blockquote {
   font-family: 'AktivGrotesk-Medium';
   font-size: 26pt;
   margin-top: 32px;
@@ -73,14 +73,14 @@ p, li {
   display: block;
 }
 
-.subheading {
+h2 {
   font-family: 'AktivGrotesk-Medium';
   font-size: 13pt;
   margin-bottom: 34px;
   margin-top: 38px;
 }
 
-.subsubheading {
+h3 {
   font-family: 'AktivGrotesk-Medium';
   font-size: 11pt;
   margin-bottom: 5px;
