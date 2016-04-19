@@ -56,20 +56,19 @@ body {
   margin-bottom: 20px;
   margin-left: 0px;
   margin-right: 0px;
+  font-size: 120%;
   /* background-image: url('bg.jpg'); */
 }
 
 p, li {
-  font-size: 10pt;
-  line-height: 17pt;
+  font-size: 0.813em;
+  line-height: 1.7em;
 }
 
 blockquote {
   font-family: 'AktivGrotesk-Medium';
-  font-size: 26pt;
-  margin-top: 32px;
-  line-height: 29pt;
-  margin-bottom: 32px;
+  font-size: 2.2em;
+  line-height: 2.9em;
   display: block;
 }
 
