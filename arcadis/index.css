@@ -56,8 +56,14 @@ body {
   margin-bottom: 20px;
   margin-left: 0px;
   margin-right: 0px;
-  font-size: 120%;
+  font-size: 100%;
   /* background-image: url('bg.jpg'); */
+}
+
+@media(min-width: 400px) {
+  body {
+    font-size: 140%;
+  }
 }
 
 p, li {
@@ -68,21 +74,22 @@ p, li {
 blockquote {
   font-family: 'AktivGrotesk-Medium';
   font-size: 2.2em;
-  line-height: 2.9em;
+  line-height: 1.4em;
   display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 h2 {
   font-family: 'AktivGrotesk-Medium';
-  font-size: 13pt;
-  margin-bottom: 34px;
-  margin-top: 38px;
+  font-size: 1.05em;
+  line-height: 1.5em;
 }
 
 h3 {
   font-family: 'AktivGrotesk-Medium';
-  font-size: 11pt;
-  margin-bottom: 5px;
+  font-size: 0.95em;
+  line-height: 1.3em;
 }
 
 .block {
@@ -90,9 +97,13 @@ h3 {
   margin-right: 25px;
 }
 
+.info-box {
+  margin-top: 30px;
+}
+
 .info-heading {
   font-family: 'AktivGrotesk-Medium';
-  font-size: 26pt;
+  font-size: 2.2em;
   color: #ED6B1A;
   margin-bottom: 6px;
 }
@@ -101,7 +112,7 @@ h3 {
   text-transform: uppercase;
   color: #D1D1D1;
   font-weight: bold;
-  font-size: 10pt;
+  font-size: 0.8em;
   margin-bottom: 10px;
   font-family: 'AktivGrotesk-Medium';
 }
@@ -121,7 +132,7 @@ h3 {
 .slideshow {
   margin: 0;
   margin-top: 25px;
-  height: 260px;
+  margin-bottom: 2em;
 }
 
 .video {
@@ -135,11 +146,10 @@ h3 {
 }
 
 .caption {
-  font-size: 8pt;
-  line-height: 12pt;
+  font-size: 0.7em;
+  line-height: 1em;
   color: gray;
   margin-top: 12px;
-  margin-bottom: 32px;
   margin-left: 16px;
   margin-right: 20px;
 }
